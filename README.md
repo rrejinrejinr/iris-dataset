@@ -1,63 +1,32 @@
-🌸 Iris Flower Classification – Streamlit App
+Machine Learning Project:  
+Iris-flower-classification
 
-This project is a machine learning web application built using Streamlit that classifies Iris flowers based on their measurements. Users can select different ML models, view accuracy, and predict the flower species using an interactive UI.
+This program applies basic machine learning (classification) concepts on Fisher’s Iris Data to predict the species of a new sample of Iris flower.
 
-🚀 Features
 
-Interactive Streamlit UI
+Introduction
 
-Supports multiple ML models:
 
-Support Vector Machine (SVM)
+The dataset consists of 50 samples from each of three species of Iris  
+  (Iris setosa, Iris virginica, and Iris versicolor).
 
-Logistic Regression
+- Four features were measured from each sample (in centimetres):
+  - Length of the sepals  
+  - Width of the sepals  
+  - Length of the petals  
+  - Width of the petals  
 
-Decision Tree
 
-Displays model accuracy
+Working of the iris_decision_tree_classifier
 
-Predicts Iris flower species using user inputs
+- The program takes data from the `load_iris()` function available in the `sklearn` module.  
+- The program then creates a decision tree based on the dataset for classification.  
+- The user is then asked to enter the four parameters of the sample, and the prediction about the species of the flower is printed to the user.
 
-Simple and beginner-friendly project
 
-🧠 Models Used
+Working of the iris_selfmade_KNN
 
-Support Vector Machine (SVM)
-
-Logistic Regression
-
-Decision Tree Classifier
-
-📊 Dataset
-
-Iris Dataset
-
-Provided by sklearn.datasets
-
-Contains 150 samples with 4 features:
-
-Sepal Length
-
-Sepal Width
-
-Petal Length
-
-Petal Width
-
-3 Classes:
-
-Setosa
-
-Versicolor
-
-Virginica
-
-🛠️ Technologies Used
-
-Python
-
-Streamlit
-
-Scikit-learn
-
-NumPy
+- The program takes data from the `load_iris()` function available in the `sklearn` module.  
+- The program then divides the dataset into training and testing samples in an 80:20 ratio randomly using the `train_test_split()` function available in the `sklearn` module.  
+- The training sample space is used to train the program, and predictions are made on the testing sample space.  
+- The accuracy score is then calculated by comparing with the correct results of the training dataset.
