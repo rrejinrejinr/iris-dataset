@@ -1,32 +1,41 @@
-Machine Learning Project:  
-Iris-flower-classification
+CLASSIFICATION ON IRIS FLOWER DATASET
 
-This program applies basic machine learning (classification) concepts on Fisher’s Iris Data to predict the species of a new sample of Iris flower.
+This project focuses on classifying Iris flowers into three species — Setosa, Versicolor, and Virginica — using the famous Iris Dataset.
+It is a beginner-friendly machine learning classification project that demonstrates data preprocessing, model training, evaluation, and prediction.
 
+Dataset Information
+The dataset used in this project is the Iris Dataset, which contains 150 samples with 4 features each:
+Sepal Length
+Sepal Width
+Petal Length
+Petal Width
+Each sample belongs to one of the three Iris flower species.
 
-Introduction
+Algorithms Used
+The following machine learning algorithms are implemented and compared:
+Logistic Regression
+Decision Tree Classifier
+Support Vector Classifier (SVC)
 
+Workflow
+Load the Iris dataset
+Perform data exploration and visualization
+Split data into training and testing sets
+Train multiple classification models
+Evaluate models using accuracy and confusion matrix
+Predict flower species based on input features
 
-The dataset consists of 50 samples from each of three species of Iris  
-  (Iris setosa, Iris virginica, and Iris versicolor).
+Model Evaluation
+The models are evaluated using:
+Accuracy Score
+Classification Report
+Confusion Matrix
+This helps in comparing the performance of different algorithms.
 
-- Four features were measured from each sample (in centimetres):
-  - Length of the sepals  
-  - Width of the sepals  
-  - Length of the petals  
-  - Width of the petals  
-
-
-Working of the iris_decision_tree_classifier
-
-- The program takes data from the `load_iris()` function available in the `sklearn` module.  
-- The program then creates a decision tree based on the dataset for classification.  
-- The user is then asked to enter the four parameters of the sample, and the prediction about the species of the flower is printed to the user.
-
-
-Working of the iris_selfmade_KNN
-
-- The program takes data from the `load_iris()` function available in the `sklearn` module.  
-- The program then divides the dataset into training and testing samples in an 80:20 ratio randomly using the `train_test_split()` function available in the `sklearn` module.  
-- The training sample space is used to train the program, and predictions are made on the testing sample space.  
-- The accuracy score is then calculated by comparing with the correct results of the training dataset.
+Technologies Used
+Python
+NumPy
+Pandas
+Matplotlib
+Seaborn
+Scikit-learn
